@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zrób sobie kebaba</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <p id="p_dosoundoffa"><img src="soundoff.png" id="soundoff" onclick="dajdzwiek()"></p>    
+    <div id="pole_gry">
+    <h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Kebab Clicker</h1>
+    <table>
+        <tr>
+        <td>Zbierz drewno</td>
+        <td>Zbierz pszenicę</td>    
+        <td>Zbierz pomidory</td>    
+        <td>Zbierz sałatę</td>    
+        <td>Zabij owce na mięcho</td>
+        <td>Śpij</td>        
+        </tr>
+        <tr>
+        <td><button id="digWood"></button> <span id="woodCount">0</span>/30<br></td>
+        <td><button id="collectWheat"></button> <span id="wheatCount">0</span>/20<br></td> 
+        <td><button id="collectTomatoes"></button> <span id="tomatoCount">0</span>/8<br></td>
+        <td><button id="collectLettuce"></button> <span id="lettuceCount">0</span>/3<br></td>
+        <td><button id="killSheep"></button> <span id="sheepCount">0</span>/5<br></td>
+        <td><button id="sleep"></button><span id="hp">Hp:100</span>/100<br></td>   
+        </tr>
+        <tr>
+        <td><td><td><td><button id="sprawdz">Sprawdź</button></td></td></td></td>
+        </tr>
+    </table>
+    </div>
+    <script src="kebabGame.js"></script>
+    <script src="skrypt_gry.js"></script>
+    <script src="skrypty_poboczne.js"></script>
+</body>
+</html>
