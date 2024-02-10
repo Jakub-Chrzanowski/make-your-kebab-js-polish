@@ -11,7 +11,7 @@ class KebabGame {
     }
 
     digWood() {
-        if(this.hp >=3 && this.wood <30) {
+        if(this.hp >0 && this.wood <30) {
             this.hp -=9;
             if (this.hp <= 0) {
                 alert("Zmarłeś! Koniec gry.");
@@ -32,7 +32,7 @@ class KebabGame {
     }
 
     collectWheat() {
-        if(this.stanowisko && this.hp >=5 && this.wheat <20) {
+        if(this.stanowisko && this.hp >0 && this.wheat <20) {
             this.hp -=8;
             if (this.hp <= 0) {
                 alert("Zmarłeś! Koniec gry.");
@@ -50,7 +50,7 @@ class KebabGame {
     }
 
     collectTomatoes() {
-        if(this.stanowisko && this.hp >=2 && this.tomatoes <8) {
+        if(this.stanowisko && this.hp >0 && this.tomatoes <8) {
             this.hp -=13;
             if (this.hp <= 0) {
                 alert("Zmarłeś! Koniec gry.");
@@ -70,7 +70,7 @@ class KebabGame {
     }
 
     collectLettuce() {
-        if(this.stanowisko && this.hp >=10 && this.lettuce <3) {
+        if(this.stanowisko && this.hp >0 && this.lettuce <3) {
             this.hp -=20;
             if (this.hp <= 0) {
                 alert("Zmarłeś! Koniec gry.");
@@ -88,7 +88,7 @@ class KebabGame {
     }
 
     killSheep() {
-        if(this.stanowisko && this.hp >=30 && this.sheep <5) {
+        if(this.stanowisko && this.hp >0 && this.sheep <5) {
             this.hp -=30;
             if (this.hp <= 0) {
                 alert("Zmarłeś! Koniec gry.");
